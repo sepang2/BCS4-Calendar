@@ -1,5 +1,7 @@
 import DateCard from "./components/DateCard";
 import DateData from "./date.json";
+import DayCard from "./components/DayCard";
+import DayData from "./day.json";
 
 const App = () => {
   return (
@@ -8,27 +10,9 @@ const App = () => {
       <h1 className="mb-12 text-7xl text-purple-500 font-bold ">NOV</h1>
       <div className="bg-gray-50 p-10 mb-20">
         <ul className="grid grid-cols-7 gap-4">
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            SUN
-          </li>
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            MON
-          </li>
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            TUE
-          </li>
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            WED
-          </li>
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            THU
-          </li>
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            FRI
-          </li>
-          <li className="w-32 flex justify-center border-b-2 border-gray-300">
-            SAT
-          </li>
+          {DayData.map((v, i) => {
+            return <DayCard key={i} day={v.day} />;
+          })}
           <li className="w-32 h-32"></li>
           <li className="w-32 h-32"></li>
           <li className="w-32 h-32"></li>

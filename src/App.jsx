@@ -6,7 +6,7 @@ const App = () => {
     <div className="min-hight-screen bg-purple-200 flex flex-col justify-center items-center">
       <h1 className="text-5xl font-bold">2023</h1>
       <h1 className="mb-12 text-7xl text-purple-500 font-bold ">NOV</h1>
-      <div className="bg-gray-50 p-10">
+      <div className="bg-gray-50 p-10 mb-20">
         <ul className="grid grid-cols-7 gap-4">
           <li className="w-32 flex justify-center border-b-2 border-gray-300">
             SUN
